@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/luas_segitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Segitiga"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/alas_panjang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Panjang Alas :"
+        android:textSize="30dp"
+        android:layout_below="@id/luas_segitiga" />
+
+    <EditText
+        android:id="@+id/edt_panjang_alas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignTop="@id/alas_panjang"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/alas_panjang"/>
+
+    <TextView
+        android:id="@+id/tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tinggi :"
+        android:textSize="30dp"
+        android:layout_below="@id/edt_panjang_alas" />
+
+    <EditText
+        android:id="@+id/edt_tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignTop="@id/tinggi"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/tinggi"/>
+
+    <Button
+        android:id="@+id/btn_hitung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:layout_below="@+id/edt_tinggi"
+        android:layout_centerInParent="true"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil :"
+        android:textSize="30dp"
+        android:layout_below="@id/btn_hitung" />
+
+
+    <EditText
+        android:id="@+id/edt_hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:layout_alignTop="@id/hasil"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/hasil"/>
+
+</RelativeLayout>
