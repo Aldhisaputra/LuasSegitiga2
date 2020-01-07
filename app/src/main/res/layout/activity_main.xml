@@ -23,7 +23,7 @@
         android:layout_below="@id/luas_segitiga" />
 
     <EditText
-        android:id="@+id/edt_panjang_alas"
+        android:id="@+id/pedestal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -37,10 +37,10 @@
         android:layout_height="wrap_content"
         android:text="Tinggi :"
         android:textSize="30dp"
-        android:layout_below="@id/edt_panjang_alas" />
+        android:layout_below="@id/pedestal" />
 
     <EditText
-        android:id="@+id/edt_tinggi"
+        android:id="@+id/height"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
@@ -49,30 +49,23 @@
         android:layout_toEndOf="@id/tinggi"/>
 
     <Button
-        android:id="@+id/btn_hitung"
+        android:id="@+id/hitung"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hitung"
-        android:layout_below="@+id/edt_tinggi"
-        android:layout_centerInParent="true"
-        android:lines="2" />
+        android:layout_below="@+id/height"
+        android:layout_centerInParent="true"/>
 
     <TextView
         android:id="@+id/hasil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hasil :"
+        android:text="Hasil "
         android:textSize="30dp"
-        android:layout_below="@id/btn_hitung" />
+        android:layout_centerInParent="true"
+        android:layout_below="@id/hitung" />
 
 
-    <EditText
-        android:id="@+id/edt_hasil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="numberDecimal"
-        android:layout_alignTop="@id/hasil"
-        android:layout_alignParentRight="true"
-        android:layout_toEndOf="@id/hasil"/>
+
 
 </RelativeLayout>
