@@ -6,30 +6,30 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/luas_segitiga"
+        android:id="@+id/triangle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Luas Segitiga"
         android:layout_centerHorizontal="true"
         android:textSize="30dp"
-        android:lines="2" />
+        android:lines="2"/>
 
     <TextView
-        android:id="@+id/alas_panjang"
+        android:id="@+id/long_pedestal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Panjang Alas :"
         android:textSize="30dp"
-        android:layout_below="@id/luas_segitiga" />
+        android:layout_below="@id/triangle"/>
 
     <EditText
         android:id="@+id/pedestal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="numberDecimal"
-        android:layout_alignTop="@id/alas_panjang"
+        android:layout_alignTop="@id/long_pedestal"
         android:layout_alignParentRight="true"
-        android:layout_toEndOf="@+id/alas_panjang"/>
+        android:layout_toEndOf="@+id/long_pedestal"/>
 
     <TextView
         android:id="@+id/tinggi"
